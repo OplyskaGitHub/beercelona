@@ -1,0 +1,13 @@
+[07-Sep-2024 21:04:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/beercelona/public_html/install/model/upgrade/1000.php:146
+Stack trace:
+#0 /home/beercelona/public_html/system/engine/loader.php(248): ModelUpgrade1000->upgrade()
+#1 /home/beercelona/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#2 /home/beercelona/public_html/install/controller/upgrade/upgrade.php(54): Proxy->__call('upgrade', Array)
+#3 /home/beercelona/public_html/system/engine/action.php(79): ControllerUpgradeUpgrade->next()
+#4 /home/beercelona/public_html/system/engine/router.php(67): Action->execute(Object(Registry))
+#5 /home/beercelona/public_html/system/engine/router.php(56): Router->execute(Object(Action))
+#6 /home/beercelona/public_html/system/framework.php(168): Router->dispatch(Object(Action), Object(Action))
+#7 /home/beercelona/public_html/system/startup.php(104): require_once('/home/beercelon...')
+#8 /home/beercelona/public_html/install/index.php(37): start('install')
+#9 {main}
+  thrown in /home/beercelona/public_html/install/model/upgrade/1000.php on line 146
